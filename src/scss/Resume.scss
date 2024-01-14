@@ -3,10 +3,9 @@
 
 .resume{
     margin-top: -5rem;
-    padding: 8rem 2rem 0 2rem;
+    padding: 8rem 2rem 2rem 2rem;
     background-color: $brown;
-    height: 160vh;
-    // background-color: rgba(0, 0, 0, 0.3);
+    height: fit-content;
 
      h1{
             text-transform: capitalize;
@@ -14,7 +13,9 @@
             font-size: 3rem;
             float: right;
             margin-top: -6rem;
-            margin-right: 6rem;
+            color: $maroon;
+            width: 50%;
+
         }
      .title{
         .title_text{
@@ -25,29 +26,32 @@
         span{
             font-size: 3rem;
             position: relative;
-            height: fit-content;
 
-            em{
+               em{
                 background-color: $gray;
                 width: 0.2rem;
                 height: 100vh;
                 position: absolute;
-                top: 3rem;
-                left: 0.27rem;
-                z-index: 4;
+                top: 1.6rem;
+                left: 0.05rem;
+                z-index: 0;
             }
         }
         }
     }
 
-    .education_container{
-       float: right;
-       width: 36%;
+    .educ_exp_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+            .education_container{
+                place-self: center;
+                margin-top: -1rem;
        color: white;
+       width: 34vw;
+       height: fit-content;
        border: 1px solid white;
        padding: 1rem 2rem 1rem 1rem;
-       margin-right: 4rem;
-       margin-top: -2rem;
+
 
        .section_title{
         text-transform: capitalize;
@@ -86,10 +90,9 @@
     }
 
     .experience_container{
+        place-self: center;
         background-color: white;
         width: 34vw;
-        margin-left: 4rem;
-        margin-top:2rem;
         padding: $padding;
 
       
@@ -134,17 +137,10 @@
 
         .hashtags_skill{
             display: flex;
-            justify-content: space-around;
+            flex-wrap: wrap;
+            justify-content: normal;
+            gap: 1rem;
             position: relative;
-
-            span{
-                position: absolute;
-                left: 12rem;
-                top: -0.8rem;
-                height: 0.05rem;
-                width: 70vw;
-                background-color: $black;
-            }
 
             p{
                 width: fit-content;
@@ -157,13 +153,18 @@
     }
 
 
+    }
+
+
+
         .skills_title{
             text-transform: capitalize;
             font-size: 2rem;
             margin-bottom: 1rem;
+            color: $maroon;
             float: right;
             margin-top: -2rem;
-            margin-right: 16rem; 
+            margin-right: 25%; 
             
         }
 
@@ -171,6 +172,7 @@
             margin-left: 3rem;
             margin-top: 2rem;
             display: flex;
+            flex-wrap: wrap;
             
             .skills_column{
                 flex: 1;
@@ -179,9 +181,25 @@
                  li{
                 list-style: none;
                 strong{
-                    text-align: center;
                     text-transform: uppercase;
+                    display: flex;
+                    align-items: center;
+                    
+                    .skills_icon{
+                        margin-right: 0.5rem;
+             
+                    svg{
+                        width: 2rem ;
+                    height: auto !important;
+                    // fill: $maroon !important;
+                    }
+                    }
+
+                    
                 }
+                
+                
+                
                 .progress_bar_container {
   width: 100%;
   height: 0.5rem;
@@ -198,7 +216,7 @@
 }
                 .progress_rate{
                     display: flex;
-                    justify-content: space-around;
+                    justify-content: space-between;
                     margin-bottom: 0.5rem;
 
                     span{
@@ -212,4 +230,261 @@
 
            
         }
+}
+@media (max-width:1170px){
+    .resume{
+        .educ_exp_grid{
+            .education_container{
+                margin-top: -6rem;
+            }
+        }
+    }
+}
+@media (max-width:999px){
+    .resume{
+        h1{
+            font-size: 2.5rem;
+        }
+
+        #skills_container{
+            margin-left: 1rem;
+        }
+    }
+}
+
+@media (max-width:890px){
+    .resume{
+        p{
+            font-size: $fontMedium;
+        }
+
+        h1{
+            font-size: 2rem;
+            margin-right: -2rem;
+        }
+        .title{
+            .title_text{
+                font-size: 1.5rem;
+                span{
+                    em{
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+        .educ_exp_grid{
+        .education_container{
+            margin-right: 0;
+            .section_title{
+                font-size: 1.5rem;
+            }
+            .educ_border{
+
+            p{
+                font-size: $fontMedium;
+            }
+            .school_level{
+                .educ_icons{
+                    font-size: 0.75rem;
+                    left: -1.4rem;
+                }
+            }
+            }
+        }
+        }
+
+        .experience_container{
+            margin-left: 0;
+            position: relative;
+            z-index: 3;
+
+            .section_title{
+                font-size: 1.5rem;
+            }
+            .works{
+                font-size: $fontMedium;
+            }
+            
+        }
+
+        .skills_title{
+            font-size: 1.5rem;
+        }
+        #skills_container{
+            .skills_column{
+                li{
+                    strong{
+                        font-size: $fontMedium;
+                        .skills_icon{
+                            svg{
+                                width: 1.5rem;
+                            }
+                        }
+                    }
+
+                    .progress_rate{
+                        span{
+                            font-size: 0.5rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+    
+
+@media (max-width:760px){
+    .resume{
+        .title{
+            .title_text{
+                span{
+                    em{
+                        height: 70vh;
+                    }
+                }
+            }
+        }
+        margin-top: -4rem;
+        h1{
+            width: unset;
+            float: unset;
+            margin-right: 0;
+            text-align: center;
+            margin-top: -2rem;
+            position: relative;
+            z-index: 99;
+        }
+
+        .educ_exp_grid{
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+
+            .experience_container, .education_container{
+                width: 60vw;
+
+            }
+        }
+
+        .skills_title{
+            float: unset;
+            margin-top: -5rem;
+            margin-left: 4rem;
+        }
+
+    }
+}
+
+@media (max-width:640px){
+    .resume{
+        #skills_container{
+            width: 90%;
+            margin-left: 2rem;
+        }
+    }
+}
+
+@media (max-width:600px){
+    .resume{
+        .title{
+            .title_text{
+                span{
+                    em{
+                        height: 170vh;
+                    }
+                }
+            }
+        }
+
+
+    }
+}
+
+@media (max-width:480px){
+    .resume{
+        padding-left: 1rem;
+        padding-right: 1rem;
+        h1{
+            font-size: 1.5rem;
+        }
+        .title{
+            .title_text{
+                font-size: 1rem;
+                span{
+                    font-size: 2rem;
+                    em{
+                        top: 1rem;
+  
+                    }
+                }
+            }
+        }
+
+        .educ_exp_grid{
+        .experience_container{
+            width: 70vw;
+            .section_title{
+                font-size: 1rem;
+            }
+            P{
+                font-size: $fontSmall;
+            }
+            .hashtags_skill{
+                gap: 0.5rem;
+            }
+        }
+        .education_container{
+            margin-top: -4rem;
+            .section_title{
+                font-size: 1rem;
+            }
+
+            .educ_border{
+                p{
+                    font-size: $fontSmall;
+                }
+                .school_level{
+                    .educ_icons{
+                        font-size: 0.6rem;
+                        left: -1.36rem;
+                    }
+                }
+            }
+
+        }
+    }
+        .skills_title{
+            margin-top: -3rem;
+            margin-left: 2rem;
+            font-size: 1rem;
+        }
+        #skills_container{
+            margin-left: 1rem;
+        }
+}
+}
+
+@media (max-width:380px){
+    .resume{
+        #skills_container{
+            margin-left: 0;
+            width: fit-content;
+
+            .skills_column{
+                li{
+                    span{
+                        font-size: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:326px){
+    .resume{
+        .education_container{
+            margin-top: 40rem;
+        }
+    }
 }

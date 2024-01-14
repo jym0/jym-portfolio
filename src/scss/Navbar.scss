@@ -71,10 +71,9 @@ nav{
 
 
 @media (max-width:768px){
-  *{
-    font-size: 0.875rem;
-  }
+
   .headerTop{
+  font-size: 0.875rem;
     p{
       text-wrap:wrap;
     }
@@ -92,6 +91,7 @@ nav{
     }
   }
   nav{
+    font-size: 0.875rem;
     div{
       width: 28rem;
 
@@ -101,20 +101,21 @@ nav{
 
 
 @media (max-width:520px){
-    *{
-    font-size: $fontSmall;
-    }
+    
   .headerTop{
+    font-size: $fontSmall;
     padding: 1rem 0;
 
     img{
-      height: 1.75rem;
-      margin-left: -1rem;
+      height: 1.5rem;
+      margin-left: 1rem;
     }
     div{
         a{
-          height: $fontSmall;
-          width: $fontSmall;
+          svg{
+          width: auto;
+          height: 1rem;
+          }
         }
     }
     
@@ -122,6 +123,7 @@ nav{
 
 
   nav{
+    font-size: 0.6rem;
     div{
       width: auto;
       padding-left: $fontLarge;

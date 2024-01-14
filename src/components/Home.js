@@ -67,7 +67,7 @@ const Home = () => {
           compatibility, delivering a seamless experience across various devices
           and screen sizes.
         </p>
-        <a class="prev_projectsBtn">
+        <a className="prev_projectsBtn">
           <span>previous projects</span>
         </a>
       </div>
