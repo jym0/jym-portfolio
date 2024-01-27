@@ -1,11 +1,13 @@
 import React from 'react'
 import "../scss/Resume.scss";
-import SchoolIcon from "@mui/icons-material/School";
-import PolylineIcon from "@mui/icons-material/Polyline";
+import AOS from "aos";
+import "aos/dist/aos.css";
 import DetailsIcon from "@mui/icons-material/Details";
 
 
 const Resume = () => {
+  AOS.init();
+
 
 
   const skills = [
@@ -138,7 +140,13 @@ const Resume = () => {
 
   return (
     <section className="resume">
-      <h1 className="title_resume">combination of skills & experience</h1>
+      <h1
+        className="title_resume"
+        data-aos="fade-down"
+        data-aos-duration="2000"
+      >
+        combination of skills & experience
+      </h1>
       <div className="title">
         <p className="title_text">
           <span>
@@ -148,7 +156,11 @@ const Resume = () => {
         </p>
       </div>
       <div className="educ_exp_grid">
-        <div className="experience_container">
+        <div
+          className="experience_container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <h2 className="section_title">experience</h2>
           <p className="exp_type">Internship</p>
           <p className="exp_work">
@@ -175,7 +187,11 @@ const Resume = () => {
             <p>#adaptability</p>
           </div>
         </div>
-        <div className="education_container">
+        <div
+          className="education_container"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
           <h2 className="section_title">education</h2>
           <div className="educ_border">
             <p className="school_level">
@@ -220,6 +236,10 @@ const Resume = () => {
                 <div
                   className="progress_bar"
                   style={{ width: `${skill.progress}%` }}
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-anchor=".skills_column"
                 ></div>
               </div>
               <div className="progress_rate">
@@ -246,6 +266,10 @@ const Resume = () => {
                 <div
                   className="progress_bar"
                   style={{ width: `${skill.progress}%` }}
+                  data-aos="fade-right"
+                  data-aos-easing="linear"
+                  data-aos-duration="1000"
+                  data-aos-anchor=".skills_column"
                 ></div>
               </div>
               <div className="progress_rate">

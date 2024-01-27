@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import '../scss/Navbar.scss';
-import Logo from "../assets/logo.svg";
+import Logo from "../assets/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";

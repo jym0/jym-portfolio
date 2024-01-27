@@ -77,3 +77,53 @@ $textGray: rgba(99, 99, 99, 0.795);
 }
 
 
+@keyframes rightToLeft {
+    from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+ 
+  
+}
+
+
+
+
+
+@keyframes footerLogo{
+  0%{
+    transform: translateX(0%);
+  }
+  30%{
+    transform: translateX(-10%);
+  }
+  60%{
+    transform: translateX(0%);
+  }
+  80%{
+    transform: translateX(10%);
+
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+@font-face {
+    font-family: "Baybayin BTB30";
+    src: url("https://db.onlinewebfonts.com/t/859733f6ea8bf457a8e058576941b94e.eot");
+    src: url("https://db.onlinewebfonts.com/t/859733f6ea8bf457a8e058576941b94e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/859733f6ea8bf457a8e058576941b94e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/859733f6ea8bf457a8e058576941b94e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/859733f6ea8bf457a8e058576941b94e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/859733f6ea8bf457a8e058576941b94e.svg#Baybayin BTB30")format("svg");
+}
+
+@mixin errorMessage{
+  position: absolute;
+  bottom: -1rem;
+  color: $brown;
+}

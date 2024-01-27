@@ -1,12 +1,18 @@
-import React from 'react'
+import React from "react";
 import "../scss/About.scss";
 import myPic from "../assets/myPic.png";
 import BadgeIcon from "@mui/icons-material/Badge";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const About = () => {
+  AOS.init();
 
   const repeatBybyin2 = 3;
-  
+
+
+   
+
   return (
     <section className="about">
       <div className="title">
@@ -39,11 +45,13 @@ const About = () => {
           <u>Jym Weil</u>
         </p>
         <p>
-          I'm a self<span></span>taught
+          I'm a self
+          <span data-aos="zoom-in" data-aos-duration="3000"  data-aos-anchor=".myName_container"></span>
+          taught
         </p>
         <p>
           <u>web developer</u>
-          <span></span>{" "}
+          <span data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor=".myName_container"></span>
           <strong>
             . <span></span>
           </strong>
@@ -70,7 +78,7 @@ const About = () => {
       </div>
       <div className="mySelf_container">
         <div className="div_figure">
-          <figure>
+          <figure data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <img src={myPic} alt="my picture" />
             <figcaption>
               <BadgeIcon className="badgeIcon" />
@@ -108,7 +116,7 @@ const About = () => {
           </figure>
         </div>
         <div className="devoted_container">
-          <h2>Devoted to responsibilities</h2>
+          <h2 data-aos="flip-down">Devoted to responsibilities</h2>
           <p>
             I am hardworking, dedicated to my work, and adaptable to current
             trends in technology. My interest in web development and design
@@ -131,6 +139,6 @@ const About = () => {
       </div>
     </section>
   );
-}
+};
 
-export default About
+export default About;

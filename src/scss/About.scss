@@ -36,12 +36,19 @@ position: relative;
         font-size: 6rem;
         font-weight:900;
         margin-bottom: 2rem;
+
         span{
-            flex: 1;
+            flex: 1;    
   height: 0.2rem;
   background-color: $black;
   margin: 0 2rem; 
+
+             &.animate__rubberBand {
+    // Add the animate.css class for fade-in animation
+    animation-duration: 2s; // Adjust the animation duration as needed
+             }
         }
+        
 
         u{
             text-decoration: none;

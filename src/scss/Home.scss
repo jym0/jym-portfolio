@@ -1,15 +1,5 @@
 @import '_Helpers';
 
-@keyframes rightToLeft {
-    from {
-    transform: translateX(0%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
- 
-  
-}
 
 .home{
     margin-bottom: 3rem;
@@ -39,6 +29,7 @@ position: relative;
             width: 30vw;
             height: 100%;
             opacity: 0.6;
+            // animation: fadeInUp 1s;
         }
 
         div{
@@ -64,10 +55,14 @@ position: relative;
         margin-bottom: 1rem;
         height: max-content;
         line-height: 1.5;
+        animation: fadeIn 1s;
+
         
         span{
             font-family: $titleStyle;
             font-size: 2.5rem;
+            
+            
         }
         
 
