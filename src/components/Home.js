@@ -21,6 +21,20 @@ const Home = () => {
   //   loop: {},
   // })
 
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      const offset = rect.top + window.scrollY;
+
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
 
 
    const wordsToRepeat = ["designer", <DonutSmallIcon className="donut"/>, "developer", <DonutSmallIcon className="donut2" />];
@@ -67,12 +81,14 @@ const Home = () => {
           compatibility, delivering a seamless experience across various devices
           and screen sizes.
         </p>
-        <a className="prev_projectsBtn">
+        <a
+          className="prev_projectsBtn"
+          onClick={() => scrollToSection("myLatestProjects")}
+        >
           <span>previous projects</span>
         </a>
       </div>
       <div className="myPic_container">
-
         <img src={myPic} alt="my picture" />
         <div></div>
       </div>

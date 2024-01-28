@@ -101,7 +101,7 @@ AOS.init();
 
   
     return (
-      <section className="contact">
+      <section className="contact" id="contact">
         <h2 className="contact_title">Get in touch</h2>
         <div className="contact_info_container" data-aos="zoom-in-up">
           <svg

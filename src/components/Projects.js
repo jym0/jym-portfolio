@@ -172,7 +172,7 @@ const Projects = () => {
       <p className="intro_proj" data-aos="fade-down-right">
         let's dive into my creations
       </p>
-      <div className="latest_projects_container">
+      <div className="latest_projects_container" id="myLatestProjects">
         <svg
           className="bybyin_latest_project"
           version="1.0"
@@ -254,7 +254,7 @@ const Projects = () => {
           </figure>
         </div>
       </div>
-      <div className="projects_container">
+      <div className="projects_container" id="myProjects">
         <svg
           className="bybyin_projects"
           version="1.0"

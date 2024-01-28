@@ -53,13 +53,17 @@ nav{
   
 
 
-    a{
+    button{
+      border: none;
+      background-color: unset;
     text-decoration: none;
     text-transform:capitalize;
     font-family: $titleStyle;
+    font-size: $fontLarge;
     letter-spacing: $letterSpace;
     color: black;
     transition: 0.5s;
+    cursor: pointer;
 
     &:hover{
       color: $brown;

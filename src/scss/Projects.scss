@@ -1,8 +1,9 @@
 @import 'Helpers';
 
 .projects{
-    padding: 2rem;
+    padding: 0 2rem;
     position: relative;
+    overflow: hidden;
      .footer_error{
             width: fit-content;
         color: #ff0000;
@@ -35,7 +36,7 @@
             background: linear-gradient(to bottom, $brown 50%, white 50%);
   background-clip: text;
   color: transparent;
-  margin-top: 1.2rem;
+  margin-top: 3.3rem;
         
 
         }

@@ -4,9 +4,27 @@ import Logo from "../assets/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import Resume from "../components/Resume";
+import Projects from "../components/Projects";
+import Contact from "../components/Contact";
 
 
 const Navbar = () => {
+
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+
+  if (section) {
+    const rect = section.getBoundingClientRect();
+    const offset = rect.top + window.scrollY;
+
+    window.scrollTo({
+      top: offset,
+      behavior: "smooth",
+    });
+  }
+};
+
     const [currentDate, setCurrentDate] = useState(new Date());
 
     useEffect(() => {
@@ -44,9 +62,15 @@ const Navbar = () => {
       </div>
       <nav>
         <div>
-          <a href="#resume">Explore my journey</a>
-          <a href="#projects">my creations</a>
-          <a href="#contact">let's connect</a>
+          <button onClick={() => scrollToSection("about")}>
+            Explore my journey
+          </button>
+          <button onClick={() => scrollToSection("myProjects")}>
+            My creations
+          </button>
+          <button onClick={() => scrollToSection("contact")}>
+            Let's connect
+          </button>
         </div>
       </nav>
     </header>

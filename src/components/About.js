@@ -46,12 +46,20 @@ const About = () => {
         </p>
         <p>
           I'm a self
-          <span data-aos="zoom-in" data-aos-duration="3000"  data-aos-anchor=".myName_container"></span>
+          <span
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-anchor=".myName_container"
+          ></span>
           taught
         </p>
         <p>
           <u>web developer</u>
-          <span data-aos="zoom-in" data-aos-duration="3000" data-aos-anchor=".myName_container"></span>
+          <span
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-anchor=".myName_container"
+          ></span>
           <strong>
             . <span></span>
           </strong>
@@ -76,7 +84,7 @@ const About = () => {
           </g>{" "}
         </svg>
       </div>
-      <div className="mySelf_container">
+      <div className="mySelf_container" id="about">
         <div className="div_figure">
           <figure data-aos="fade-up" data-aos-anchor-placement="center-bottom">
             <img src={myPic} alt="my picture" />
