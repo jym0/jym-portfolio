@@ -4,9 +4,7 @@ import Logo from "../assets/logo.png";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import Resume from "../components/Resume";
-import Projects from "../components/Projects";
-import Contact from "../components/Contact";
+
 
 
 const Navbar = () => {
@@ -49,13 +47,21 @@ const scrollToSection = (sectionId) => {
         <img src={Logo} alt="Logo" />
 
         <div>
-          <a>
+          <a
+            href="https://www.facebook.com/jymwelfabellore?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noreferrer"
+          >
             <FacebookIcon />
           </a>
-          <a>
+          <a href="https://github.com/jym0" target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
-          <a>
+          <a
+            href="https://www.linkedin.com/in/jym-weil-fabellore-3b016b229/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <LinkedInIcon />
           </a>
         </div>

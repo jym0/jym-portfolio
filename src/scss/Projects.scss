@@ -2,10 +2,13 @@
 
 .projects{
     padding: 0 2rem;
+
     position: relative;
     overflow: hidden;
-     .footer_error{
-            width: fit-content;
+     .code_error{
+        position: absolute;
+        top: 1rem;
+        width: fit-content;
         color: #ff0000;
         display: flex;
         align-items: center;
@@ -19,10 +22,10 @@
         }
         .background_color{
                 position: absolute;
-                top:7.5rem;
+                top:7rem;
                 left: 0;
                 width: 100%;
-                height: 27rem;
+                height: 30rem;
                 background-color: $black;
                 z-index: -1;
 
@@ -31,17 +34,23 @@
         .intro_proj{
             font-family: $titleStyle;
             font-size: 4rem;
-            text-align: center;
             text-transform: capitalize;
             background: linear-gradient(to bottom, $brown 50%, white 50%);
   background-clip: text;
   color: transparent;
-  margin-top: 3.3rem;
+  position: absolute;
+  top: 4.2rem;
+  left: 20%;
+  transform: translateX(-20%);
+  text-align: center;
+
+
         
 
         }
 
     .latest_projects_container{
+        padding-top: 8rem;
 
          position:relative;
 
@@ -53,14 +62,14 @@
         z-index: -1;
         position: absolute;
         rotate: -10deg;
-        top: 20%;
+        top: 50%;
         left: -2rem;
         }
     
 
         .latest_project{
             color: white;
-            margin-top: 4rem;
+            margin-top: 5rem;
  
            
 
@@ -238,7 +247,7 @@
             .line_gallery:nth-child(3){
                 width: 100%;
                 top:102%;
-                left: unset;
+                left: 0;
             }
 
 
@@ -362,6 +371,7 @@
                 .desc_preview{
                     width: fit-content;
                     text-transform: capitalize;
+                    text-align: center;
                     color: $black;
                     position: absolute;
                     font-family: $titleStyle;
@@ -375,11 +385,42 @@
        
     }
      .random_title_projects{
-            font-family: $titleStyle;
-            font-size: 4rem;
+            font-size:6rem;
+            text-indent: 6rem;
+            font-style:italic;
             font-weight: 900;
+            line-height: 0.4;
             color: $black;
-            text-align: center;
+            margin-left: 3%;
+            margin-top: 5rem;
+            margin-bottom: 6rem;
+            position: relative;
+
+
+            span{
+                font-style: normal;
+                font-family: $titleStyle;
+                color: $brown;
+            }
+
+
+            p{
+                height: 0.2rem;
+                width: 7%;
+                background-color: $black;
+                rotate: -60deg;
+                position: absolute;
+                right: 3rem;
+            }
+
+            em{
+                 height: 0.2rem;
+                width: 5%;
+                background-color: $black;
+                rotate: -60deg;
+                position: absolute;
+                right: 3rem
+            }
 
           
         }
@@ -387,12 +428,23 @@
     }
 }
 
+@media (max-width:1130px){
+    .projects{
+
+        .projects_container{
+        .random_title_projects{
+            font-size: 5.5rem;
+            margin-left: 2%;
+        }
+    }
+    }
+}
 
 @media (max-width:1110px){
     .projects{
         .latest_projects_container{
             .bybyin_latest_project{
-                top: 30%;
+                top: 54%;
             }
             .latest_project{
                 figure{
@@ -414,8 +466,12 @@
     .projects{
         .intro_proj{
             font-size: 3rem;
-            margin-top: 2rem;
+            top:4.8rem;
         }
+        .background_color{
+            height: 38rem;
+        }
+
       
 
         .latest_projects_container{
@@ -431,6 +487,9 @@
     
 
         .projects_container{
+            .random_title_projects{
+                font-size: 5rem;
+            }
             .bybyin_projects{
                 width: 36rem;
             }
@@ -462,6 +521,7 @@
 @media (max-width:1024px){
     .projects{
 
+
         .latest_projects_container{
             .latest_project{
                 figure{
@@ -488,7 +548,6 @@
     .projects{
         .intro_proj{
             font-size: 3rem;
-            margin-top: 2rem;
         }
         .background_color{
             height: 46rem;
@@ -496,12 +555,13 @@
 
         .latest_projects_container{
             .bybyin_latest_project{
-                top: 30%;
+                top: 40%;
+                
             }
             .latest_project{
                 figure{
                     grid-template-columns: unset;
-                    grid-template-rows: 1fr 1fr;
+                    grid-template-rows: auto auto;
                     place-items: start center;
                     gap: 0;
 
@@ -512,7 +572,7 @@
 
                     figcaption{
                         width: 70%;
-                        margin-top: -3rem;
+                        margin-top: -2rem;
                     }
                 }
             }
@@ -521,6 +581,18 @@
     
 
         .projects_container{
+
+            .random_title_projects{
+                font-size: 4.5rem;
+
+                p{
+                    right: 1rem;
+                }
+
+                em{
+                    right: 1rem;
+                }
+            }
             .bybyin_projects{
                 width: 30rem;
             }
@@ -530,15 +602,15 @@
 
 @media (max-width:800px){
     .projects{
-        .latest_projects_container{
-            .latest_project{
-                figure{
-                    figcaption{
-                        margin-top: -5rem;
-                    }
-                }
-            }
+        .code_error{
+            font-size: $fontMedium;
         }
+
+        .projects_container{
+            .random_title_projects{
+                font-size: 4rem;
+                text-indent: 4rem;
+            }
 
         .projects_gallery{
                 .projects_pic{
@@ -552,6 +624,7 @@
                     }
                 }
             }
+        }
     }
 }
 
@@ -559,7 +632,9 @@
     .projects{
         .intro_proj{
             font-size: 2rem;
-            margin-top: 2.7rem;
+            top: 5.5rem;
+            left: 24%;
+
         }
         .background_color{
             height: 42rem;
@@ -570,7 +645,10 @@
                 font-size: 1.2rem;
             }
 
+            
+
             .latest_project{
+                width: fit-content;
                 figure{
                 
                     img{
@@ -578,8 +656,8 @@
                     }
 
                     figcaption{
-                        margin-top: -3rem;
                         font-size: $fontMedium;
+                       
 
                         .tech_container{
                             img{
@@ -630,18 +708,226 @@
 
                     
                 }
+
+                .preview{
+                    div{
+                        .desc_preview{
+                            font-size: $fontMedium;
+                            bottom: -1.2rem;
+                        }
+                    }
+                }
             }
         }
 }
 }
 
-@media (max-width:540px){
+
+@media (max-width:690px){
     .projects{
         .projects_container{
+            .random_title_projects{
+                font-size: 3.5rem;
+
+            }
+        }
+    }
+}
+
+@media (max-width: 600px){
+    .projects{
+        .code_error{
+            font-size: 10px;
+
+            .highlight_off{
+                width: 0.8rem;
+            }
+        }
+
+        .intro_proj{
+            left: 20%;
+            top: 5.6rem;
+        }
+        .latest_projects_container{
+            .latest_project{
+                figure{
+                    img{
+                        width: 24rem;
+                    }
+                }
+            }
+        }
+
+        .projects_container{
+            .random_title_projects{
+                font-size: 3rem;
+                p, em{
+                    right: 0;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (max-width:540px){
+    .projects{
+        .intro_proj{
+            left: 15%;
+        }
+
+        .projects_container{
+            .random_title_projects{
+                font-size: 2.5rem;
+                margin-left: 1%;
+                margin-bottom: 5rem;
+            }
+            h2{
+                margin-left: 0;
+            }
             .projects_gallery{
                 .projects_pic{
                     grid-template-columns: 1fr;
+
                 }
+                .preview{
+                    div{
+                        .desc_preview{
+                            font-size: $fontSmall;
+                        }
+                    }
+                }
+            }
+        }
+
+        .latest_projects_container{
+
+           
+            .latest_project{
+                .titleFor_project{
+                    margin-left: 0;
+                }
+                figure{
+                    img{
+                        width:100%;
+                    }
+
+                    figcaption{
+                        width: 86%;
+
+
+                        .airvis_title{
+                            justify-content: space-between;
+                            margin-bottom: 0.5rem;
+                            h3{
+                                margin-left: 0;
+                            }
+
+                            a{
+                                font-size: $fontSmall;
+
+                                .launch_icon{
+                                    width: 2.5rem;
+                                    margin-right: -0.5rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:460px){
+    .projects{
+        padding: 0 0.5rem;
+
+        .intro_proj{
+            font-size: 1.5rem;
+            top: 5rem;
+            left: 15%;
+            transform: translateX(-15%);
+            
+        }
+        .background_color{
+            top: 6rem;
+        }
+        .latest_projects_container{
+            margin-top: -1.5rem;
+
+            .bybyin_latest_project{
+                    left: 0;
+                }
+            .latest_project{
+                .titleFor_project{
+                    font-size: $fontLarge;
+                }
+
+                
+
+                
+                figure{
+
+                    figcaption{
+                        font-size: $fontSmall;
+                        padding: 1rem;
+                        margin-top: -1rem;
+
+                    }
+                }
+            }
+        }
+
+            .projects_container{
+                .random_title_projects{
+                    font-size: 2.2rem;
+                }
+                h2{
+                    font-size: $fontLarge
+                }
+                .bybyin_projects{
+                    width: 20rem;
+                }
+
+                ul{
+                    li{
+                        font-size: $fontSmall;
+                    }
+                }
+
+                .projects_gallery{
+                    .preview{
+                        div{
+                            iframe{
+                                width: 100vw;
+                            }
+                        }
+                    }
+                }
+            }
+        
+
+
+    }
+}
+
+@media (max-width:340px){
+    .projects{
+        .code_error{
+            font-size: 8px;
+        }
+
+        .intro_proj{
+
+            font-size: 1.2rem;
+            top: 5.2rem;
+        }
+
+        .projects_container{
+            .random_title_projects{
+                font-size: 1.7rem;
             }
         }
     }

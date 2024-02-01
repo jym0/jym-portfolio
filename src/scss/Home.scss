@@ -29,7 +29,7 @@ position: relative;
             width: 30vw;
             height: 100%;
             opacity: 0.6;
-            // animation: fadeInUp 1s;
+            animation: bounce 1s;
         }
 
         div{
@@ -48,6 +48,7 @@ position: relative;
         margin-top: 3rem;
         margin-left: 7rem;
         position: relative;
+        animation: fadeInLeft 1s;
 
      .intro_text{
         color: $black;

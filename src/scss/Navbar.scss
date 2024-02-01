@@ -28,6 +28,13 @@
     div{
 a{
   color: $black;
+  transition: 0.5s;
+  cursor: pointer;
+
+
+  &:hover{
+    color: $khaki;
+  }
 }
       a:nth-child(2){
         margin-left: 0.8rem;
@@ -95,9 +102,12 @@ nav{
     }
   }
   nav{
-    font-size: 0.875rem;
     div{
       width: 28rem;
+
+      button{
+        font-size: 0.875rem;
+      }
 
     }
   }
@@ -127,11 +137,16 @@ nav{
 
 
   nav{
-    font-size: 0.6rem;
+   
     div{
       width: auto;
       padding-left: $fontLarge;
       padding-right:$fontLarge;
+
+
+      button{
+         font-size: 0.6rem;
+      }
     }
   }
 }

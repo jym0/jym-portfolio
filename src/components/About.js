@@ -126,21 +126,22 @@ const About = () => {
         <div className="devoted_container">
           <h2 data-aos="flip-down">Devoted to responsibilities</h2>
           <p>
-            I am hardworking, dedicated to my work, and adaptable to current
-            trends in technology. My interest in web development and design
-            sparked just recently last year. Before, I didn't have a passion for
-            writing code; I hated coding or programming and was only interested
-            in editing and designing. But when I am in my 4th year and I am
-            thinking about what I can pursue after graduation, it just
-            stimulates me to try web development and love coding.
+            I am a hardworking and dedicated individual with a newfound passion
+            for web development and design. I only started learning to code last
+            year, and I've come quite a bit. Before, I wasn't a fan of coding. I
+            preferred editing and designing. However, as I approached my 4th
+            year and started thinking about post-graduation plans, something
+            sparked. I decided to give web development a try, and surprisingly,
+            I developed a passion for coding.
             <br />
-            Now I enjoy coding its structure and logic, even sometimes I look at
-            them for more than an hour just to fix the error. I am looking to
-            expand and develop my skills in the industry, as I believe I have
-            the drive and interest to excel in it.
+            Now, I find joy in crafting the structure and logic of code. I'm not
+            afraid to spend hours fixing errors, and it's become a satisfying
+            challenge. I'm eager to expand and develop my skills in this
+            industry because I truly believe I have the drive and interest to
+            excel in it.
           </p>
 
-          <a className="download_cv">
+          <a className="download_cv" href={process.env.PUBLIC_URL + '/assets/files/Fabellore, Jym Weil F._CV.pdf'} download="Fabellore, Jym Weil F._CV.pdf">
             <span>download cv</span>
           </a>
         </div>

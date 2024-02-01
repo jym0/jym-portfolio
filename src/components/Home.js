@@ -76,10 +76,9 @@ const Home = () => {
       </svg>
       <div className="intro">
         <p className="intro_text">
-          Optimize
-          <br /> <span>designs and code</span> <br /> for cross-platform
-          compatibility, delivering a seamless experience across various devices
-          and screen sizes.
+          Make
+          <br /> <span>designs and code</span> <br /> work well on different
+          devices and screens by optimizing them for compatibility.
         </p>
         <a
           className="prev_projectsBtn"

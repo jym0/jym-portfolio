@@ -1,0 +1,111 @@
+@import "Helpers";
+
+
+.preload{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+
+
+    .preload_text{
+ 
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        animation: fadeText 3s ease;
+        p{
+            font-family: "Baybayin BTB30";
+            font-size: 2rem;
+
+
+            span{
+                font-family: $contentStyle;
+            }
+
+        }
+    }
+    // .preload_text2{
+    //     rotate: 90deg;
+    //         position: absolute;
+    //         bottom: 20%;
+    //         right: 10%;
+    //         animation: fadeText 8s ease;
+
+    //          p{
+    //         font-family: "Baybayin BTB30";
+    //         font-size: 1rem;
+
+    //     }
+    // }
+
+    .preload_logo{
+        position: relative;
+
+        span{
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            position: absolute;
+            left: 0;
+            animation: preloadLogo 9s;
+            
+        }
+    }
+}
+
+@media (max-width:920px){
+    .preload{
+        .preload_text{
+            p{
+                font-size:1.5rem ;
+            }
+        }
+
+        .preload_logo{
+            img{
+                width: 20rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media (max-width:640px){
+    .preload{
+        .preload_text{
+            p{
+                font-size:1rem ;
+            }
+        }
+
+        .preload_logo{
+            img{
+                width: 15rem;
+                height: auto;
+            }
+        }
+    }
+}
+
+
+@media (max-width:470px){
+    .preload{
+        .preload_text{
+            p{
+                font-size:1rem ;
+            }
+        }
+
+        .preload_logo{
+            img{
+                width: 10rem;
+                height: auto;
+            }
+        }
+    }
+}

@@ -156,7 +156,7 @@ AOS.init();
               <p className="error_message">{formErrors.name}</p>
             </div>
             <div
-              data-aos="fade-left"
+              data-aos="fade-right"
               data-aos-offset="300"
               data-aos-easing="ease-in-sine"
             >

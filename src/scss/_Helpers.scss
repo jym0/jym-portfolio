@@ -127,3 +127,35 @@ $textGray: rgba(99, 99, 99, 0.795);
   bottom: -1rem;
   color: $brown;
 }
+
+
+
+@keyframes preloadLogo{
+  0%{
+    left: 10%;
+  }
+  25%{
+    left: 38%;
+  }
+  50%{
+    left: 56%;
+  }
+  75%{
+    left: 75%;
+
+  }
+  100%{
+    left: 102%;
+
+  }
+}
+
+@keyframes fadeText{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+
+}

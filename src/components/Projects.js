@@ -23,6 +23,10 @@ import pw2 from "../assets/projects/p-w2.png";
 import pw3 from "../assets/projects/p-w3.png";
 import pw4 from "../assets/projects/p-w4.png";
 import pw5 from "../assets/projects/p-w5.png";
+import pw6 from "../assets/projects/p-w6.png";
+import pw7 from "../assets/projects/p-w7.png";
+import pw8 from "../assets/projects/p-w8.png";
+
 
 const Projects = () => {
 
@@ -104,8 +108,8 @@ const Projects = () => {
       id: 4,
       img: pw4,
       category: "website",
-      websiteUrl: "https://www.blogger.com/about/?bpli=1",
-      desc: "Technology Stack: HTML, Bootstrap, PHP, and MySQL",
+      websiteUrl: "https://jym0.github.io/gandara-/#",
+      desc: "Technology Stack: HTML, SCSS, and JavaScript",
     },
     {
       id: 5,
@@ -113,6 +117,27 @@ const Projects = () => {
       category: "website",
       websiteUrl: "https://voyageventures.000webhostapp.com/home.php",
       desc: "Technology Stack: HTML, Bootstrap, PHP, and MySQL",
+    },
+    {
+      id: 6,
+      img: pw6,
+      category: "website",
+      websiteUrl: "https://jym0.github.io/Fabellore-Jym-Weil-F.---Portfolio/",
+      desc: "Technology Stack: HTML, CSS, and JavaScript",
+    },
+    {
+      id: 7,
+      img: pw7,
+      category: "website",
+      websiteUrl: "https://jym0.github.io/todos-/",
+      desc: "Technology Stack: HTML, Bootstrap, and JavaScript",
+    },
+    {
+      id: 8,
+      img: pw8,
+      category: "website",
+      websiteUrl: "https://jym0.github.io/calculator-app/",
+      desc: "Technology Stack: HTML, CSS, and JavaScript",
     },
   ];
 
@@ -163,7 +188,7 @@ const Projects = () => {
 
   return (
     <section className="projects">
-      <p className="footer_error">
+      <p className="code_error">
         <HighlightOff className="highlight_off" />
         ERROR: Roses are Red, Violets are Blue Unexpected &#39;&#123;&#39; on
         line 32.
@@ -172,7 +197,7 @@ const Projects = () => {
       <p className="intro_proj" data-aos="fade-down-right">
         let's dive into my creations
       </p>
-      <div className="latest_projects_container" id="myLatestProjects">
+      <div className="latest_projects_container">
         <svg
           className="bybyin_latest_project"
           version="1.0"
@@ -195,7 +220,7 @@ const Projects = () => {
             <path d="M1335 41 c-6 -5 -21 -11 -35 -13 l-25 -4 28 -14 c21 -10 30 -11 39 -2 7 7 21 12 33 12 20 1 20 1 1 15 -23 17 -29 18 -41 6z" />{" "}
           </g>{" "}
         </svg>
-        <div className="latest_project">
+        <div className="latest_project" id="myLatestProjects">
           <h2 className="titleFor_project">latest/</h2>
           <figure>
             <img
@@ -237,7 +262,7 @@ const Projects = () => {
               <div
                 className="airvis_title"
                 data-aos="zoom-out-up"
-                data-aos-duration="2000"
+                data-aos-duration="1500"
                 data-aos-anchor=".latest_project"
               >
                 <h3>air-vis</h3>
@@ -316,6 +341,7 @@ const Projects = () => {
                       alt={`Project ${item.id}`}
                       className={selectedImage === item.img ? "selected" : ""}
                       data-aos="zoom-in-up"
+                      data-aos-anchor=".projects_pic"
                     />
                     <div
                       className="preview_background"
@@ -340,9 +366,15 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="random_title_projects">
-          The only thing more tangled than my headphones is my CSS in this
+        <div className="random_title_projects" data-aos="zoom-out-down">
+          The only thing
+          <br /> more <span>tangled</span> than
+          <br /> my earphones is
+          <br /> my <span>CSS</span> in this
+          <br />
           project.
+          <p></p>
+          <em></em>
         </div>
       </div>
     </section>

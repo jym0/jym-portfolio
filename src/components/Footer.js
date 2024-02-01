@@ -11,6 +11,20 @@ import "aos/dist/aos.css";
 const Footer = () => {
   AOS.init();
 
+  const footerScrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+
+    if (section) {
+      const rect = section.getBoundingClientRect();
+      const offset = rect.top + window.scrollY;
+
+      window.scrollTo({
+        top: offset,
+        behavior: "smooth",
+      });
+    }
+  };
+
   const [randomQuote, setRandomQuote] = useState("");
 
   
@@ -55,16 +69,16 @@ const Footer = () => {
         <p className="footer_links">
           Links
           <LinearScale className="line_links" />
-          <a>
+          <a onClick={() => footerScrollToSection("about")}>
             about <CallMissedOutgoing />
           </a>
-          <a>
+          <a onClick={() => footerScrollToSection("myLatestProjects")}>
             featured <CallMissedOutgoing />
           </a>
-          <a>
+          <a onClick={() => footerScrollToSection("myProjects")}>
             projects <CallMissedOutgoing />
           </a>
-          <a>
+          <a onClick={() => footerScrollToSection("contact")}>
             contacts <CallMissedOutgoing />
           </a>
         </p>
@@ -76,9 +90,23 @@ const Footer = () => {
           <Favorite />. Copyright 2024 jym.
         </p>
         <p>
-          <a>Facebook</a>
-          <a>Github</a>
-          <a>LinkedIn</a>
+          <a
+            href="https://www.facebook.com/jymwelfabellore?mibextid=ZbWKwL"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Facebook
+          </a>
+          <a href="https://github.com/jym0" target="_blank" rel="noreferrer">
+            Github
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jym-weil-fabellore-3b016b229/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            LinkedIn
+          </a>
         </p>
 
         <div className="footer_logo">
