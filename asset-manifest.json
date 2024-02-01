@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jym-portfolio/static/css/main.d21834a0.css",
-    "main.js": "/jym-portfolio/static/js/main.b0de7949.js",
+    "main.css": "/jym-portfolio/static/css/main.80154ec0.css",
+    "main.js": "/jym-portfolio/static/js/main.d82e3dce.js",
     "static/media/p1.png": "/jym-portfolio/static/media/p1.c8ce8a1ea1c6073aa89f.png",
     "static/media/p2.png": "/jym-portfolio/static/media/p2.86151bbcc6f7fe9d18fa.png",
     "static/media/p4.png": "/jym-portfolio/static/media/p4.f41c4f29c38ffac29b94.png",
@@ -9,20 +9,23 @@
     "static/media/p3.png": "/jym-portfolio/static/media/p3.e68abb52cbc84d8c3f31.png",
     "static/media/p5.png": "/jym-portfolio/static/media/p5.2ff1f156d30457748fa2.png",
     "static/media/home-left.png": "/jym-portfolio/static/media/home-left.6aeb59390b815f049f43.png",
-    "static/media/p-w4.png": "/jym-portfolio/static/media/p-w4.c9ea029350ef0da83bde.png",
     "static/media/home-projects2.png": "/jym-portfolio/static/media/home-projects2.e210947c5e80daf6e42e.png",
     "static/media/p-w5.png": "/jym-portfolio/static/media/p-w5.e210947c5e80daf6e42e.png",
     "static/media/p8.png": "/jym-portfolio/static/media/p8.1d0cdf68305e19593695.png",
     "static/media/p7.png": "/jym-portfolio/static/media/p7.ab496d4ba590bde6ab3a.png",
     "static/media/p-w3.png": "/jym-portfolio/static/media/p-w3.ca4aaea59464692928e8.png",
+    "static/media/p-w4.png": "/jym-portfolio/static/media/p-w4.17ae95561f9181c4221d.png",
     "static/media/home-left2.png": "/jym-portfolio/static/media/home-left2.2b48999627692459a69e.png",
     "static/media/p-w2.png": "/jym-portfolio/static/media/p-w2.08c0a99d0faa0c64580b.png",
     "static/media/myPic.png": "/jym-portfolio/static/media/myPic.19935e883c2c4c0e54be.png",
     "static/media/latest_project.png": "/jym-portfolio/static/media/latest_project.777a41c1c23115d338c1.png",
+    "static/media/p-w6.png": "/jym-portfolio/static/media/p-w6.80597c6f6682be824493.png",
     "static/media/home-pic.jpg": "/jym-portfolio/static/media/home-pic.a4925101fe2e5172f961.jpg",
     "static/media/home-projects.png": "/jym-portfolio/static/media/home-projects.00a4e02be6e6a8a63f31.png",
     "static/media/p-w1.png": "/jym-portfolio/static/media/p-w1.00a4e02be6e6a8a63f31.png",
+    "static/media/p-w7.png": "/jym-portfolio/static/media/p-w7.70f12537d5f60db587fe.png",
     "static/media/homepic-removebg.png": "/jym-portfolio/static/media/homepic-removebg.95929f0c5d718d4074b4.png",
+    "static/media/p-w8.png": "/jym-portfolio/static/media/p-w8.d3bd31897cad73a3148a.png",
     "static/media/JYM_remove.png": "/jym-portfolio/static/media/JYM_remove.d19cbc6e2acb026b87b2.png",
     "static/media/mysql-svgrepo-com.svg": "/jym-portfolio/static/media/mysql-svgrepo-com.9d4817511cdb22743973cc866b1de365.svg",
     "static/media/baybayin.svg": "/jym-portfolio/static/media/baybayin.afc55e643eec6bea3a023f774987eacb.svg",
@@ -31,11 +34,11 @@
     "static/media/css3-01-svgrepo-com.svg": "/jym-portfolio/static/media/css3-01-svgrepo-com.15f7d6c31df6ca3f5418c7f74080ed4c.svg",
     "static/media/html5-01-svgrepo-com.svg": "/jym-portfolio/static/media/html5-01-svgrepo-com.a25f6f2707d992b1c367cab78e1aea71.svg",
     "index.html": "/jym-portfolio/index.html",
-    "main.d21834a0.css.map": "/jym-portfolio/static/css/main.d21834a0.css.map",
-    "main.b0de7949.js.map": "/jym-portfolio/static/js/main.b0de7949.js.map"
+    "main.80154ec0.css.map": "/jym-portfolio/static/css/main.80154ec0.css.map",
+    "main.d82e3dce.js.map": "/jym-portfolio/static/js/main.d82e3dce.js.map"
   },
   "entrypoints": [
-    "static/css/main.d21834a0.css",
-    "static/js/main.b0de7949.js"
+    "static/css/main.80154ec0.css",
+    "static/js/main.d82e3dce.js"
   ]
 }
