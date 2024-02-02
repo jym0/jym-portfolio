@@ -141,7 +141,11 @@ const About = () => {
             excel in it.
           </p>
 
-          <a className="download_cv" href={process.env.PUBLIC_URL + '/assets/files/Fabellore, Jym Weil F._CV.pdf'} download="Fabellore, Jym Weil F._CV.pdf">
+          <a
+            className="download_cv"
+            href="/assets/files/Fabellore_Jym_Weil_F_CV.pdf"
+            download="Fabellore_Jym_Weil_F_CV.pdf"
+          >
             <span>download cv</span>
           </a>
         </div>
