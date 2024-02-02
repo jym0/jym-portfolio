@@ -78,7 +78,7 @@ const Home = () => {
         <p className="intro_text">
           Make
           <br /> <span>designs and code</span> <br /> work well on different
-          devices and screens by optimizing them for compatibility.
+          devices<br/> and screens by optimizing them<br/> for compatibility.
         </p>
         <a
           className="prev_projectsBtn"
