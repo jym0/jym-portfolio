@@ -53,7 +53,7 @@ const Resume = () => {
           
           
       `,
-      progress: "20",
+      progress: "30",
     },
     {
       title: "javascript",
@@ -64,7 +64,7 @@ const Resume = () => {
             </svg>
           
       `,
-      progress: "25",
+      progress: "20",
     },
     {
       title: "php",
@@ -75,7 +75,7 @@ const Resume = () => {
             </svg>
           
       `,
-      progress: "25",
+      progress: "20",
     },
     {
       title: "mysql",
