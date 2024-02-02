@@ -621,3 +621,21 @@ position: relative;
         }
     }
 }
+
+
+@media (max-width:360px){
+    .about{
+        .myName_container{
+       
+            p:nth-child(3){
+                strong{
+                   
+                    span{
+                        height:80vh;
+                    }
+                }
+            }
+        }
+    
+    }
+}
