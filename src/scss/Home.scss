@@ -4,6 +4,7 @@
 .home{
     margin-bottom: 3rem;
     margin-top: 1rem;
+    height: 80vh;
     position: relative;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -45,8 +46,7 @@ position: relative;
     }
     
     .intro{
-        margin-top: 3rem;
-        margin-left: 7rem;
+        place-self: center;
         position: relative;
         animation: fadeInLeft 1s;
 
