@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jym-portfolio/static/css/main.509b47ff.css",
-    "main.js": "/jym-portfolio/static/js/main.081528e7.js",
+    "main.css": "/jym-portfolio/static/css/main.d59c9b94.css",
+    "main.js": "/jym-portfolio/static/js/main.1553505b.js",
     "static/media/p1.png": "/jym-portfolio/static/media/p1.c8ce8a1ea1c6073aa89f.png",
     "static/media/p2.png": "/jym-portfolio/static/media/p2.86151bbcc6f7fe9d18fa.png",
     "static/media/p4.png": "/jym-portfolio/static/media/p4.f41c4f29c38ffac29b94.png",
@@ -34,11 +34,11 @@
     "static/media/css3-01-svgrepo-com.svg": "/jym-portfolio/static/media/css3-01-svgrepo-com.15f7d6c31df6ca3f5418c7f74080ed4c.svg",
     "static/media/html5-01-svgrepo-com.svg": "/jym-portfolio/static/media/html5-01-svgrepo-com.a25f6f2707d992b1c367cab78e1aea71.svg",
     "index.html": "/jym-portfolio/index.html",
-    "main.509b47ff.css.map": "/jym-portfolio/static/css/main.509b47ff.css.map",
-    "main.081528e7.js.map": "/jym-portfolio/static/js/main.081528e7.js.map"
+    "main.d59c9b94.css.map": "/jym-portfolio/static/css/main.d59c9b94.css.map",
+    "main.1553505b.js.map": "/jym-portfolio/static/js/main.1553505b.js.map"
   },
   "entrypoints": [
-    "static/css/main.509b47ff.css",
-    "static/js/main.081528e7.js"
+    "static/css/main.d59c9b94.css",
+    "static/js/main.1553505b.js"
   ]
 }
