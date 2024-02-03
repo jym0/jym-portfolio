@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/jym-portfolio/static/css/main.d59c9b94.css",
+    "main.css": "/jym-portfolio/static/css/main.be2c7c6e.css",
     "main.js": "/jym-portfolio/static/js/main.1553505b.js",
     "static/media/p1.png": "/jym-portfolio/static/media/p1.c8ce8a1ea1c6073aa89f.png",
     "static/media/p2.png": "/jym-portfolio/static/media/p2.86151bbcc6f7fe9d18fa.png",
@@ -34,11 +34,11 @@
     "static/media/css3-01-svgrepo-com.svg": "/jym-portfolio/static/media/css3-01-svgrepo-com.15f7d6c31df6ca3f5418c7f74080ed4c.svg",
     "static/media/html5-01-svgrepo-com.svg": "/jym-portfolio/static/media/html5-01-svgrepo-com.a25f6f2707d992b1c367cab78e1aea71.svg",
     "index.html": "/jym-portfolio/index.html",
-    "main.d59c9b94.css.map": "/jym-portfolio/static/css/main.d59c9b94.css.map",
+    "main.be2c7c6e.css.map": "/jym-portfolio/static/css/main.be2c7c6e.css.map",
     "main.1553505b.js.map": "/jym-portfolio/static/js/main.1553505b.js.map"
   },
   "entrypoints": [
-    "static/css/main.d59c9b94.css",
+    "static/css/main.be2c7c6e.css",
     "static/js/main.1553505b.js"
   ]
 }
