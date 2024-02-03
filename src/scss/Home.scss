@@ -46,8 +46,7 @@ position: relative;
     }
     
     .intro{
-        margin-top: 3rem;
-        margin-left: 7rem;
+        place-self:center;
         position: relative;
         animation: fadeInLeft 1s;
 
@@ -119,8 +118,6 @@ position: relative;
 @media (max-width:1130px) {
     .home{
         .intro{
-            margin-bottom: 6rem;
-            margin-top: 1rem;
 
             .intro_text{
                 font-size: $fontLarge;
@@ -141,9 +138,6 @@ position: relative;
 
 @media (max-width:870px){
     .home{
-        .intro{
-            margin-left: 5rem;
-        }
         .home_bottom{
             .repeats{
                 font-size: $fontMedium;
@@ -151,13 +145,7 @@ position: relative;
         }
     }
 }
-@media (max-width:580px){
-    .home{
-        .intro{
-            margin-left: 3rem;
-        }
-    }
-}
+
 @media (max-width:520px){
     .home{
         .intro{
@@ -190,7 +178,7 @@ position: relative;
 @media (max-width:440px){
     .home{
         .intro{
-            margin-left: 0.75rem;
+
             .intro_text{
                  span{
                     font-size: 1.2rem;
