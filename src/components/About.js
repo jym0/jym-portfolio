@@ -141,7 +141,7 @@ const About = () => {
             excel in it.
           </p>
 
-          <a className="download_cv" href='/files/Fabellore_Jym_Weil_F_CV.pdf' download="Fabellore_Jym_Weil_F_CV.pdf">
+          <a className="download_cv" href='/files/Fabellore, Jym Weil F._CV.pdf' download="Fabellore, Jym Weil F._CV.pdf">
             <span>download cv</span>
           </a>
         </div>
