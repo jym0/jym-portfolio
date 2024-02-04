@@ -145,7 +145,7 @@ const About = () => {
 
           <a
             className="download_cv"
-            href={`${baseUrl}/files/Fabellore, Jym Weil F._CV.pdf`}
+            href="https://jym0.github.io/jym-portfolio/files/Fabellore,%20Jym%20Weil%20F._CV.pdf'"
             download="Fabellore, Jym Weil F._CV.pdf"
           >
             <span>download cv</span>
