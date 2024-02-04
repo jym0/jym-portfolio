@@ -8,6 +8,8 @@ import "aos/dist/aos.css";
 const About = () => {
   AOS.init();
 
+  const baseUrl = process.env.PUBLIC_URL || "";
+
   const repeatBybyin2 = 3;
 
 
@@ -143,7 +145,7 @@ const About = () => {
 
           <a
             className="download_cv"
-            href="jym-portfolio/files/Fabellore, Jym Weil F._CV.pdf"
+            href={`${baseUrl}/assets/files/Fabellore_Jym_Weil_F_CV.pdf`}
             download="Fabellore, Jym Weil F._CV.pdf"
           >
             <span>download cv</span>
