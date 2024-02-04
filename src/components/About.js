@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 const About = () => {
   AOS.init();
 
-  const baseUrl = process.env.PUBLIC_URL || "";
+
 
   const repeatBybyin2 = 3;
 
