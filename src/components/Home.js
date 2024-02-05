@@ -1,18 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "../scss/Home.scss";
-import homePic from "../assets/home-pic.jpg";
-import homeLeft from "../assets/home-left.png";
-import homeLeft2 from "../assets/home-left2.png";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
-import homeProjects from "../assets/home-projects.png";
-import homeProjects2 from "../assets/home-projects2.png";
-import Baybayin  from "../assets/baybayin.svg";
 import myPic from "../assets/homepic-removebg.png";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
-import FavoriteIcon from "@mui/icons-material/Favorite";
-import VisibilityIcon from "@mui/icons-material/Visibility";
 import DonutSmallIcon from "@mui/icons-material/DonutSmall";
 
 const Home = () => {
