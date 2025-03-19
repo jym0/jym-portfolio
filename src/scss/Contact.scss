@@ -1,0 +1,364 @@
+@import 'Helpers';
+
+.contact{
+    padding: 0 2rem;
+    padding-bottom: 12rem;
+    margin-bottom: 0.5rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+
+
+    .contact_title{
+        margin-top: 4rem;
+        text-align: center;
+        font-family: $titleStyle;
+        color: $gray;
+        font-size: 4rem;
+    }
+
+    .contact_info_container{
+        margin-top: 8rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: start center;
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+
+
+        .bybyin_contact{
+            rotate: 90deg;
+            width: 12rem;
+            height: auto;
+            fill: $maroon;
+            position: absolute;
+            top: -2.5rem;
+
+        }
+
+        .contact_info{
+            width: 60%;
+            margin-top: 6rem;
+            padding-bottom: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+
+            svg{
+                font-size: 2rem;
+                margin-bottom: 1rem;
+                cursor: pointer;
+            }
+
+        }
+
+        .contact_info:nth-child(3){
+            
+            p{
+                color: $maroon;
+                border-bottom: 1px solid $maroon;
+                cursor: pointer;
+
+            }
+        }
+
+
+    }
+    .send_message_title{
+        text-align: center;
+        text-transform: capitalize;
+        color: $maroon;
+        margin-top: 5rem;
+    }
+    .contact_form{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 5rem;
+
+  
+        
+
+
+         input{
+                border: none;
+                border-bottom: 1px solid $gray;
+                transition: 0.7s;
+                margin-top: 2rem;
+                margin-bottom: 1rem;
+                padding-bottom: 1rem;
+                font-family: $contentStyle;
+                font-size: $fontLarge;
+
+
+                &:focus{
+                    outline: none;
+                    border-color: $brown;
+                }
+
+                &::placeholder{
+                    font-size: $fontLarge;
+                }
+            }
+            input.error{
+                border-color: #ff0000;
+            transition: border-color 0.3s ease;
+            animation: shakeX 2s;
+            
+            &::placeholder{
+                color: #ff0000;
+            }
+            }
+
+            .subject_error{
+                position: relative;
+                
+                input{
+                    width: 100%;
+                }
+
+                .error_message{
+                    @include errorMessage;
+                }
+            }
+
+        .contact_input{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 5rem;
+
+            div{
+                display: flex;
+                flex-direction: column;
+                position: relative;
+
+                .error_message{
+                    @include errorMessage;
+                }
+            }
+
+
+           
+        }
+
+        .textarea_error{
+            position: relative;
+
+            .error_message{
+                @include errorMessage;
+                bottom: 0.3rem;
+            }
+        }
+
+        textarea{
+            width: 100%;
+            margin: 2rem 0;
+            border: none;
+            border-bottom: 1px solid $gray;
+            transition: 0.7s;
+            font-family: $contentStyle;
+            font-size: $fontLarge;
+
+
+            &::placeholder{
+                    font-size: $fontLarge;
+                }
+
+                &:focus{
+                    outline: none;
+                    border-color: $brown;
+                }
+        }
+
+        textarea.error{
+            border-color: #ff0000;
+            transition: border-color 0.3s ease;
+            animation: shakeX 2s;
+            
+            &::placeholder{
+                color: #ff0000;
+            }
+        }
+
+        button{
+            width:fit-content;
+            border: none;
+            margin-top: 0.75rem;
+            position: relative;
+
+
+            a{
+            @include myButton;
+            width: fit-content;
+        }
+
+
+            .submit_message{
+                width: max-content;
+            color: $maroon;
+            animation: fadeIn 1s;
+            margin-top: 0.75rem;
+            font-weight: bold;
+            font-size: $fontLarge;
+            position:absolute;
+            bottom: -2rem;
+
+        }
+    }
+
+        
+    }
+}
+
+@media (max-width:1024px){
+    .contact{
+        .contact_title{
+            font-size: 3.5rem;
+        }
+    }
+}
+@media (max-width:920px){
+    .contact{
+        .contact_title{
+            font-size: 3rem;
+        }
+
+        .contact_info_container{
+
+                .bybyin_contact{
+                    width: 10rem;
+                }
+
+                .contact_info{
+                    font-size: $fontMedium;
+                    svg{
+                        font-size: 1.5rem;
+                    }
+                }
+        }
+
+        .send_message_title{
+            font-size: 1.3rem;
+        }
+
+        .contact_form{
+            input, textarea{
+                font-size: $fontMedium;
+
+                &::placeholder{
+                    font-size: $fontMedium;
+                }
+            }
+            .contact_input{
+                grid-template-columns: unset;
+                grid-template-rows: 1fr 1fr;
+                gap: 0;
+            }
+            button{
+                a{
+                    span{
+                    font-size: $fontMedium;
+                    }
+                }
+
+                .submit_message{
+                    font-size: $fontMedium
+                }
+            }
+
+            .error_message{
+                font-size: $fontMedium;
+            }
+        }
+    }
+}
+
+@media (max-width:768px){
+    .contact{
+        .contact_title{
+            font-size: 2.5rem;
+        }
+        .contact_info_container{
+            grid-template-columns: unset;
+            grid-template-rows: repeat(4, 6rem);
+            .contact_info{
+                width: auto;
+    
+            }
+        }
+
+        .contact_form{
+            padding: 1rem 3rem;
+
+            button{
+                a{
+                    span{
+                        font-size: $fontSmall;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:480px){
+    .contact{
+        .contact_title{
+            font-size: 2rem;
+        }
+
+        .contact_info_container{
+            grid-template-rows: repeat(4, 4rem);
+            .bybyin_contact{
+                width: 9rem;
+                top: -4rem;
+            }
+
+            .contact_info{
+                margin-top: 3rem;
+                padding: 0 2rem;
+                padding-bottom: 0;
+                font-size: $fontSmall;
+
+                svg{
+                    font-size: 1.3rem;
+                    margin-bottom: 0.3rem;
+                }
+            }
+        }
+
+        .send_message_title{
+            font-size: 1.1rem;
+        }
+
+        .contact_form{
+            padding: 1rem ;
+
+            input, textarea{
+                font-size: $fontSmall;
+
+                &::placeholder{
+                    font-size: $fontSmall;
+                }
+            }
+
+            .error_message, .submit_message{
+                font-size: $fontSmall;
+            }
+
+            button{
+                a{
+                    span{
+                        font-size: $fontSmall;
+                    }
+                }
+
+                .submit_message{
+                    font-size: $fontSmall;
+                }
+            }
+
+        }
+
+    }
+
+}
