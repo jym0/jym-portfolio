@@ -146,9 +146,9 @@ const About = () => {
           <a
             className="download_cv"
             href="https://jym0.github.io/jym-portfolio/files/Fabellore_Jym_Weil_F_Resume.pdf"
-            download="Fabellore, Jym Weil F._CV.pdf"
+            download="Fabellore, Jym Weil F.Resume.pdf"
           >
-            <span>download cv</span>
+            <span>download resume</span>
           </a>
         </div>
       </div>
